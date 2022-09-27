@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Registrasi</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="judul"><h1>Formulir Registrasi</h1></div>
+      <form action="formregis" onsubmit="submit_form()">
+        <div class="form">
+          <div class="detailmahasiswa">
+            <span class="title"><h2>Peserta</h2></span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="">Nama Lengkap & Gelar</label>
+                <input type="text" placeholder="Masukkan Nama Lengkap" id="n" required />
+              </div>
+              <div class="input-field">
+                <label for="">Asal Instansi/Kota</label>
+                <input type="text" placeholder="Masukkan Asal Kota/Asal Instansi" id="k" required />
+              </div>
+              <div class="input-field">
+                <label for="">Alamat</label>
+                <input type="text" placeholder="Masukkan Alamat Lengkap" id="a" required />
+              </div>
+              <div class="input-field">
+                <label for="">Kode Pos</label>
+                <input type="text" placeholder="Masukkan Kode Pos" id="kp" required />
+              </div>
+              <div class="input-field">
+                <label for="">Provinsi</label>
+                <input type="text" placeholder="Masukkan Provinsi" id="prov" required />
+              </div>
+              <div class="input-field">
+                <label for="">Telepon/Handphone</label>
+                <input type="text" placeholder="Masukkan Nomor Telepon" id="nomor" required />
+              </div>
+              <div class="input-field">
+                <label for="">Email</label>
+                <input type="text" placeholder="Masukkan Alamat Email" id="e" required />
+              </div>
+              <div class="tulisan-sponsor">Sponsor</div>
+              <div class="sponsor-div">
+                <div class="input-field2">
+                  <label class="sponsor" for="">Nama Perusahaan</label>
+                  <input type="text" placeholder="Masukkan Nama Perusahaan" required />
+                </div>
+                <div class="input-field2">
+                  <label class="sponsor" for="">Alamat Perusahaan</label>
+                  <input type="text" placeholder="Masukkan Alamat Perusahaan" required />
+                </div>
+                <div class="input-field2">
+                  <label class="sponsor" for="">Nama Kontak Personal</label>
+                  <input type="text" placeholder="Masukkan Kontak Perwakilan Perusahaan" required />
+                </div>
+                <div class="input-field2">
+                  <label class="sponsor" for="">Telp. Personal</label>
+                  <input type="text" placeholder="Masukkan Nomor Telepon Perusahaan" required />
+                </div>
+                <div class="input-field2">
+                  <label class="sponsor" for="">Email Perusahaan</label>
+                  <input type="text" placeholder="Masukkan Email Perusahaan" required />
+                </div>
+              </div>
+              <div class="kontribusi">
+                <p>
+                  Kontribusi peserta Rp.2.500.000 (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk
+                  penginapan dan akomodasi
+                </p>
+                <br />
+                <h4>Konfirmasi kepesertaan</h4>
+                <ul>
+                  <li>Sebelum 15 Januari 2012 : Rp. 2.500.000</li>
+                  <li>Sesudah 15 Januari 2012 : Rp. 2.750.000</li>
+                  <li>On Site : Rp. 3.000.000</li>
+                </ul>
+              </div>
+              <div class="pembatalan">
+                <h4>Pembatalan Pendaftaran:</h4>
+                <ul>
+                  <li>Sebelum H-5 uang dikembalikan 50%</li>
+                  <li>Sesudah H-5 uang tidak dapat dikembalikan</li>
+                </ul>
+              </div>
+              <div class="akomodasi">
+                <p>
+                  Akomodasi penginapan peserta, harga kamar kelas standar berkisar antara Rp.250.000
+                  - Rp. 300.000 *)
+                </p>
+              </div>
+              <div class="transfer">
+                <h4>Pendaftaran via transfer Bank ke :</h4>
+                <ul>
+                  <li>Nama Bank : Bank BCA KCU Cirebon</li>
+                  <li>No. Rekening : 1341015478</li>
+                  <li>Atas Nama : Junaedi, S.Kep</li>
+                </ul>
+              </div>
+              <div class="bukti">
+                <p>Bukti transfer mohon dikirim ke alamat Sekretariat Panitia</p>
+                <p>UPTD Puskesmas Sitopeng</p>
+                <p>Jl. Sekarsari No. 1 Argasunyar Harjamukti Kota Cirebon</p>
+                <p>atau kirim ke email : enterpreneurse41@gmail.com</p>
+                <p>Konfirmasi setelah transfer ke 0818232660</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tombol-submit">
+          <input type="submit" value="Submit" onclick="create()" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
